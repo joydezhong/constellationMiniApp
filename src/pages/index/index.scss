@@ -1,0 +1,26 @@
+.textBoxHide {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+.textBoxShow {
+  width: 100%;
+  height: auto;
+}
+.moreBoxShow {
+  position: absolute;
+  bottom: 0px;
+  height: 180px;
+  width: 100%;
+  background: linear-gradient( rgba(255,255,255,0) 0%, 10%, rgba(255,255,255,1) 100%);
+}
+.moreBoxHide {
+  display: none;
+}
+.description {
+  position: absolute;
+  top:80%;
+  left:50%;
+  transform: translate(-50%, -80%);
+  font-size: 22px;
+}
