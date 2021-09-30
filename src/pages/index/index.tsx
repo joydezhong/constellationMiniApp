@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import Taro from '@tarojs/taro'
 import { View, Text } from '@tarojs/components'
 import { AtButton, AtDivider } from 'taro-ui'
 import './index.scss'
@@ -47,6 +48,7 @@ const Index = () => {
 
   return (
     <View className='index' style={{color: '000'}}>
+      <AtButton type='primary' size='normal' onClick={() => Taro.navigateTo({ url: '/pages/next/index' })}>跳转</AtButton>
       <AtButton type='primary' size='normal' onClick={handleControl}>按钮文案</AtButton>
       {
         source.map(item => (<View>
